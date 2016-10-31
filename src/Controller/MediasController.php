@@ -6,8 +6,9 @@ use Cake\Network\Exception\BadRequestException;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\Routing\Router;
+use App\Controller\AdminController;
 
-class MediasController extends AppController
+class MediasController extends AdminController
 {
 
     /**
@@ -19,8 +20,8 @@ class MediasController extends AppController
      */
     public function canUploadMedias($ref, $refId)
     {
-        if (method_exists('App\Controller\AppController', 'canUploadMedias')) {
-            return \App\Controller\AppController::canUploadMedias($ref, $refId);
+        if (method_exists('App\Controller\AdminController', 'canUploadMedias')) {
+            return \App\Controller\AdminController::canUploadMedias($ref, $refId);
         } else {
             return false;
         }

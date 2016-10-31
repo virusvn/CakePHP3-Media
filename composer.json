@@ -36,6 +36,10 @@
 			"email" : "contact@grafikart.fr",
 			"homepage" : "http://jonathan-boyer.fr/",
 			"role" : "Initial Author"
+		}, {
+			"name": "Nhan Nguyen",
+			"email": "nxtnhan@gmail.com",
+			"role" : "Developper"
 		}
 	],
 	"keywords" : [
