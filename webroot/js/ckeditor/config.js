@@ -10,9 +10,9 @@ CKEDITOR.editorConfig = function( config ) {
     
     	config.extraPlugins = 'gallery';
     	
-    	config.language = 'en';
+    	config.language = 'ja';
     	
-    	config.height = 500;
+    	config.height = 200;
 
 	// The toolbar groups arrangement, optimized for two toolbar rows.
     	/*	 

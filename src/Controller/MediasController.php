@@ -141,6 +141,7 @@ class MediasController extends AdminController
         $media = $this->Medias->patchEntity($media, $data, [
             'validate' => 'default'
         ]);
+
         if ($media->errors()) {
             echo json_encode([
                 'error' => $media->errors()
@@ -154,6 +155,7 @@ class MediasController extends AdminController
         $editor = isset($this->request->query['editor']) ? $this->request->query['editor'] : false;
         $id = isset($this->request->query['id']) ? $this->request->query['id'] : false;
         $this->set(\compact('media', 'thumbID', 'editor', 'id'));
+        $this->set('_serialize', false);
         $this->viewBuilder()->layout('json');
         $this->render('media2');
     }

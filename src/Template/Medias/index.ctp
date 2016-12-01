@@ -104,7 +104,8 @@
 				removeTemplate($gallery, '#template');
 			}else{
 				removeTemplate($gallery, '#template');
-				$item = $($.parseJSON(data).content);
+				//$item = $($.parseJSON(data).content);
+				$item = $(data.content);
 				$item.addClass('is-active');
 				$('.gallery-item-infos').hide();
 				$('.gallery-item-infos', $item).show();
