@@ -14,6 +14,7 @@ CKEDITOR.editorConfig = function( config ) {
     	
     	config.height = 200;
 
+		config.allowedContent = true;
 	// The toolbar groups arrangement, optimized for two toolbar rows.
     	/*	 
 	 config.toolbarGroups = [
@@ -55,5 +56,5 @@ CKEDITOR.editorConfig = function( config ) {
 	config.format_tags = 'p;h1;h2;h3;pre';
 
 	// Simplify the dialog windows.
-	config.removeDialogTabs = 'image:advanced;link:advanced';
+	// config.removeDialogTabs = 'image:advanced;link:advanced';
 };
