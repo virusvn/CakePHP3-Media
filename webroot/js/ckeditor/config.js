@@ -7,7 +7,7 @@ CKEDITOR.plugins.add( '5questions', {
 	init: function( editor ) {
 		editor.addCommand( '5questions', {
 			exec: function( editor ) {
-				editor.insertHtml( '<div class="question5 middle mb-20"><img src="/images/common/5questions.png"></div>' );
+				editor.insertHtml( '<h3 class="question5"><img src="/images/common/5questions.png"></h3>' );
 			}
 		});
 		editor.ui.addButton( '5questions', {
@@ -19,12 +19,12 @@ CKEDITOR.plugins.add( '5questions', {
 });
 CKEDITOR.stylesSet.add( 'my_styles', [
 	// Block-level styles.
-	{ name: '見出し', element: 'h2', attributes: { 'class': 'headline mb-20' },},
-	{ name: 'テキスト', element: 'p',  attributes: { 'class': 'text1 mb-20' }},
-	{ name: 'Mention',  element: 'p', attributes: { 'class': 'mention mb-20' } },
+	{ name: '見出し', element: 'h2', attributes: { 'class': 'headline' },},
+	{ name: 'テキスト', element: 'p',  attributes: { 'class': 'text2' }},
+	{ name: 'Mention',  element: 'p', attributes: { 'class': 'mention' } },
 	{ name: 'Q質問見出し', element: 'span' },
-	{ name: '質問見出し', element: 'h4', attributes: { 'class': 'headline_q mb-20' } },
-	{ name: '回答', element: 'p', attributes: { 'class': 'answer mb-20' } },
+	{ name: '質問見出し', element: 'h4', attributes: { 'class': 'headline_q' } },
+	{ name: '回答', element: 'p', attributes: { 'class': 'answer' } },
 
 
 ]);
