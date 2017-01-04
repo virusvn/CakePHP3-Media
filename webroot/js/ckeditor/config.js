@@ -20,7 +20,9 @@ CKEDITOR.plugins.add( '5questions', {
 CKEDITOR.stylesSet.add( 'my_styles', [
 	// Block-level styles.
 	{ name: '見出し', element: 'h2', attributes: { 'class': 'headline' },},
-	{ name: 'テキスト', element: 'p',  attributes: { 'class': 'text2' }},
+	{ name: 'テキスト1', element: 'p',  attributes: { 'class': 'text1' }},
+	{ name: 'テキスト2', element: 'p',  attributes: { 'class': 'text2' }},
+	{ name: 'フォトテキスト', element: 'p',  attributes: { 'class': 'photo_text' }},
 	{ name: 'Mention',  element: 'p', attributes: { 'class': 'mention' } },
 	{ name: 'Q質問見出し', element: 'span' },
 	{ name: '質問見出し', element: 'h4', attributes: { 'class': 'headline_q' } },
